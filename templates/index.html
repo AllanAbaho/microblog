@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/portfolio-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bucket List App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{url_for('index')}}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('login')}}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('signup')}}">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('profile')}}">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+<div class="container">
+<div class="row">
+  <div class="col-lg-8 col-md-10 mx-auto">
+	<div class="page-heading"><br>
+	  <h1>Bucket List App</h1>
+	  <span class="subheading"><h5><q>Every man dies but Not every man really lives.</q> - William Ross </h5></span><br>
+	  <p>Here are some bucketlist ideas for you</p>
+	</div>
+  </div>
+</div>
+</div>
+<div class="container">
+
+      <div class="row text-center text-lg-left">
+
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='extreme.jpg') }}" alt="">
+			<div class="caption"><p>Extreme Sport</p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='parachute.jpg') }}" alt="">
+			<div class="caption"><p>Hot air ballon</p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='travel.jpg') }}" alt="">
+			<div class="caption"><p>Travel to UK</p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='skiing.jpg') }}" alt="">
+			<div class="caption"><p>Skiing </p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='weight.jpg') }}" alt="">
+			<div class="caption"><p>Work out</p></div>
+
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='scuba.jpg') }}" alt="">
+			<div class="caption"><p>Scuba diving</p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='language.jpg') }}" alt="">
+			<div class="caption"><p>Learn a language</p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='business.jpg') }}" alt="">
+			<div class="caption"><p>Start a business</p></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='extreme.jpg') }}" alt="Extreme sport">
+			<div class="caption"><p>Sky diving</p></div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Bucketlist 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.bundle.min.js"></script>
+	<script src="/static/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
